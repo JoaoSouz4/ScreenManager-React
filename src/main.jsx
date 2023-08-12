@@ -10,7 +10,7 @@ import AlertProvider from './context/alertContext';
 import AllScreenProvider from './context/AllScrennContext';
 import EditComponentPage from './pages/EditComponent';
 import FormEditProvider from './context/EditContext';
-
+import ModalEditProvider from './context/modalEditContext';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <RouterProvider router = {router} />  */}
@@ -29,17 +29,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
           <Route path = '/edit/:name' element = {
             <FormEditProvider>
-              <AlertProvider>
-                <EditComponentPage />
-              </AlertProvider>
+              <ModalEditProvider>
+                <AlertProvider>
+                  <EditComponentPage />
+                </AlertProvider>
+              </ModalEditProvider>
             </FormEditProvider>
           }/>
 
           <Route path = '/insert' element = {
               <FormProvider>
-                  <AlertProvider>
-                    <InsertPage />
-                  </AlertProvider>
+                  
+                    <AlertProvider>
+                      <InsertPage />
+                    </AlertProvider>
+                  
               </FormProvider>
           }/>
         </Route>

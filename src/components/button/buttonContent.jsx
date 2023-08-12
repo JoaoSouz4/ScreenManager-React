@@ -1,5 +1,5 @@
 export function ButtonContent({text}){
     return(
-        <span>{text}</span>
+        <span><strong>{text}</strong></span>
     )
 }

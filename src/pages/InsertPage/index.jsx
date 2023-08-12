@@ -62,7 +62,7 @@ export default function InsertPage(){
                         </Input.Wrapper>
                     </Input.Root>
 
-                    <DropDown.Root updateState = {actions.updateBrand}>
+                    <DropDown.Root updateState = {actions.updateBrand} currentValue={formState.brand}>
                         <DropDown.Input
                             value = {formState.brand}
                             label = 'Marca do aparelho'

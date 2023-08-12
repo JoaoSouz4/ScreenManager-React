@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { DropDownContext } from "../../context/dropDownContext";
 
 export function DropDownInput({label, value}){
-    const {state} = useContext(DropDownContext);
+    const {state, setState} = useContext(DropDownContext);
 
     return(
         <Input.Root>

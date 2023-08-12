@@ -3,8 +3,8 @@ import { createContext } from 'react';
 
 export const DropDownContext = createContext();
 
-export function DropDownCtx ({children, updateState}){
-    const {state, setState} = useDropDown({updateState});
+export function DropDownCtx ({children, updateState, currentValue}){
+    const {state, setState} = useDropDown({updateState, currentValue});
 
     return (
         <DropDownContext.Provider value = {{state, setState}}>

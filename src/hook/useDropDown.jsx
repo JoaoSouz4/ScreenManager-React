@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, createContext} from 'react';
 
-export function useDropDown({updateState}){
+export function useDropDown({updateState, currentValue}){
 
     const stateRef = useRef();
     const [state, setState] = useState({

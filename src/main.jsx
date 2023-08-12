@@ -11,6 +11,8 @@ import AllScreenProvider from './context/AllScrennContext';
 import EditComponentPage from './pages/EditComponent';
 import FormEditProvider from './context/EditContext';
 import ModalEditProvider from './context/modalEditContext';
+import LaborPage from './pages/labor';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <RouterProvider router = {router} />  */}
@@ -46,6 +48,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                   
               </FormProvider>
           }/>
+
+          <Route 
+            path = '/labor'
+            element = {<LaborPage />}
+          >
+            
+          </Route>
         </Route>
       </Routes>
     </HashRouter>

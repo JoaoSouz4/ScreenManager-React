@@ -29,6 +29,15 @@ export default function MenuBar(){
                                 </div>
                             </Link>
                         </li>
+
+                        <li>
+                            <Link to = {'/labor'}>
+                                <div className = 'flex items-center gap-2 hover:bg-primary p-4 hover:shadow-md hover:text-white rounded ease-in duration-200'>
+                                    <MdAdd />
+                                    <span><strong>Mão de obra</strong></span>
+                                </div>
+                            </Link>
+                        </li>
                     </ul>
             
             </div>

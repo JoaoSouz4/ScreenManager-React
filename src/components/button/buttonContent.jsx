@@ -1,5 +1,5 @@
 export function ButtonContent({text}){
     return(
-        <span><strong>{text}</strong></span>
+        <span className = 'px-3'><strong>{text}</strong></span>
     )
 }

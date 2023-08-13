@@ -13,6 +13,7 @@ export function ComponentCard(props){
     const {cardStates} = useContext(ScreenCardContext);
     const {laborState} = useContext(LaborContext);
     const {name, brand, prices, description } = cardStates;
+    
 
     return(
 

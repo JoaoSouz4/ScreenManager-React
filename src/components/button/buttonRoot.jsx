@@ -9,7 +9,7 @@ export function ButtonRoot ({children, width, isActive, isDisabled}){
         <button
             onClick = {handleClick}
             disabled = {isDisabled}
-            className ={` bg-primary rounded-lg p-3 text-white border-2 border-phover w-[${width}] flex items-center justify-center gap-2 disabled:opacity-75`}
+            className ={` bg-primary rounded-lg p-3 text-white border-2 border-phover  flex items-center justify-center gap-2 disabled:opacity-75`}
         >
             {children}
         </button>

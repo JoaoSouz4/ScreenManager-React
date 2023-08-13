@@ -12,6 +12,8 @@ import EditComponentPage from './pages/EditComponent';
 import FormEditProvider from './context/EditContext';
 import ModalEditProvider from './context/modalEditContext';
 import LaborPage from './pages/labor';
+import LaborProvider from './context/labor';
+import DefaultModalProvider from './context/defaultModal';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,11 +24,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <LayoutApp />
         }>
           <Route path = '/search' element = {
-            <AllScreenProvider>
-              <AlertProvider>
-                <SearchPage />
-              </AlertProvider>
-            </AllScreenProvider>
+            <LaborProvider>
+              <AllScreenProvider>
+                <AlertProvider>
+                  <SearchPage />
+                </AlertProvider>
+              </AllScreenProvider>
+            </LaborProvider>
           }/>
 
           <Route path = '/edit/:name' element = {
@@ -51,7 +55,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
           <Route 
             path = '/labor'
-            element = {<LaborPage />}
+            element = {
+              <LaborProvider>
+                <DefaultModalProvider>
+                  <LaborPage />
+                </DefaultModalProvider>
+              </LaborProvider>
+            }
           >
             
           </Route>

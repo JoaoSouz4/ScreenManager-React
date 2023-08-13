@@ -2,6 +2,7 @@ import logo from '../../assets/logodefault.png'
 import Button from '../button'
 import { Link } from 'react-router-dom';
 import { MdSearch, MdAdd } from 'react-icons/md';
+import {AiFillTool} from 'react-icons/ai';
 
 export default function MenuBar(){
     return(
@@ -33,7 +34,7 @@ export default function MenuBar(){
                         <li>
                             <Link to = {'/labor'}>
                                 <div className = 'flex items-center gap-2 hover:bg-primary p-4 hover:shadow-md hover:text-white rounded ease-in duration-200'>
-                                    <MdAdd />
+                                    <AiFillTool/>
                                     <span><strong>Mão de obra</strong></span>
                                 </div>
                             </Link>

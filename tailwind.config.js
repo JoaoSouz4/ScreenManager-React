@@ -18,12 +18,12 @@ export default {
     },
     colors: {
       'gray': 'rgba(243, 243, 243, 1)',
-      'gray2': '#525252',
+      'gray2': '#0C1291',
       'black': '#18181b',
       'transparent': 'transparent',
       'primary': 'rgba(12, 18, 164, 1)',
       'phover': 'rgba(42, 99, 167, 1)',
-      'plight': 'rgba(162, 195, 234, 1)',
+      'plight': 'rgba(162, 195, 234, 90%)',
       'ghover': 'rgba(212, 212, 212, 1)',
       'white': '#fafafa',
       'yellow': 'rgb(253 224 71)'
